@@ -1,0 +1,3 @@
+include ':alloyFutsalAPIWrapper'
+include ':app'
+rootProject.name = "Alloy Futsal API Wrapper"
