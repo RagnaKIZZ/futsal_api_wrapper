@@ -11,4 +11,11 @@ class ApiServiceImpl : ApiService {
             .getObjectFlowable(ModelField::class.java)
     }
 
+    override fun searchField(name: String?): Flowable<ModelField> {
+        return Rx2AndroidNetworking.get("https://alloyfutsall.000webhostapp.com/field")
+            .addQueryParameter("name", name)
+            .build()
+            .getObjectFlowable(ModelField::class.java)
+    }
+
 }

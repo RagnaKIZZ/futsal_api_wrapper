@@ -7,4 +7,6 @@ interface ApiService {
 
     fun getField(): Flowable<ModelField>
 
+    fun searchField(name: String?): Flowable<ModelField>
+
 }

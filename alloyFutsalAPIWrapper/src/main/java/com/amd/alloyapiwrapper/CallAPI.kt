@@ -36,5 +36,32 @@ class CallAPI {
             return modelField
         }
 
+        fun hitFieldV2(onLoading: () -> Unit
+                       , onSuccess: ((resultResponse: ModelField) -> Unit)
+                       , onFailed: (msg: String) -> Unit
+        ){
+            onLoading.let { }
+            compositeDisposable.add(
+                apiHelper.getField().compose(schedulerProvider.ioToMainFlowableScheduler())
+                    .subscribe ({ resultField ->
+                        onSuccess(resultField)
+                    }, { throwable ->
+                        onFailed("Something Wrong")
+                    })
+            )
+        }
+
+        private fun manageSuccess(onSuccess: (resultResponse: ModelField) -> Unit) {
+            apiHelper.onSuccess = onSuccess
+        }
+
+        private fun manageLoading(onLoading: () -> Unit) {
+            apiHelper.onLoading = onLoading
+        }
+
+        private fun manageFailed(onFailed: (msg: String) -> Unit) {
+            apiHelper.onFailed = onFailed
+        }
+
     }
 }
