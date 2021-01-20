@@ -1,4 +1,4 @@
-package com.amd.alloyfutsalapiwrapper.utils
+package com.amd.alloyapiwrapper.utils
 
 data class Resource<out T>(val status: Status, val data: T?, val message: String?) {
 

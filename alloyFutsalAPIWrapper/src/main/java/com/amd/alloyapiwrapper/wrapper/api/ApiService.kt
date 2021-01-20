@@ -1,4 +1,4 @@
-package com.amd.alloyfutsalapiwrapper.wrapper.api
+package com.amd.alloyapiwrapper.wrapper.api
 
 import com.amd.alloyfutsalapp.model.ModelField
 import io.reactivex.Flowable

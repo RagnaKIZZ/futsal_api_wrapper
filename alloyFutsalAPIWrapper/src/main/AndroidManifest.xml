@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.amd.alloyfutsalapiwrapper">
+    package="com.amd.alloyapiwrapper">
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:name=".MyWrapper"/>
+        android:name="com.amd.alloyapiwrapper.MyWrapper"/>
 </manifest>

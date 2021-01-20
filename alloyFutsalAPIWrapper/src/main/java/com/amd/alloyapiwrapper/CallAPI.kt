@@ -1,11 +1,11 @@
-package com.amd.alloyfutsalapiwrapper
+package com.amd.alloyapiwrapper
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.amd.alloyfutsalapiwrapper.utils.Resource
-import com.amd.alloyfutsalapiwrapper.utils.SchedulerProvider
-import com.amd.alloyfutsalapiwrapper.wrapper.api.ApiHelper
-import com.amd.alloyfutsalapiwrapper.wrapper.api.ApiServiceImpl
+import com.amd.alloyapiwrapper.utils.Resource
+import com.amd.alloyapiwrapper.utils.SchedulerProvider
+import com.amd.alloyapiwrapper.wrapper.api.ApiHelper
+import com.amd.alloyapiwrapper.wrapper.api.ApiServiceImpl
 import com.amd.alloyfutsalapp.model.ModelField
 import io.reactivex.disposables.CompositeDisposable
 

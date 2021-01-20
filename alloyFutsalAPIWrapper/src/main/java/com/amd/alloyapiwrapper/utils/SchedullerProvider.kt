@@ -1,4 +1,4 @@
-package com.amd.alloyfutsalapiwrapper.utils
+package com.amd.alloyapiwrapper.utils
 
 import io.reactivex.*
 import io.reactivex.android.schedulers.AndroidSchedulers

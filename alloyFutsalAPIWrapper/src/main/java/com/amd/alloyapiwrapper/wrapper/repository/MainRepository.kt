@@ -1,9 +1,8 @@
-package com.amd.alloyfutsalapiwrapper.wrapper.repository
+package com.amd.alloyapiwrapper.wrapper.repository
 
-import com.amd.alloyfutsalapiwrapper.wrapper.api.ApiHelper
+import com.amd.alloyapiwrapper.wrapper.api.ApiHelper
 import com.amd.alloyfutsalapp.model.ModelField
 import io.reactivex.Flowable
-import java.lang.Exception
 
 class MainRepository(private val apiHelper: ApiHelper) {
 

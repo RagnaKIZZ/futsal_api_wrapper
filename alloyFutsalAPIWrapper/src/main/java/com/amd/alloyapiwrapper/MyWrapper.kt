@@ -1,4 +1,4 @@
-package com.amd.alloyfutsalapiwrapper
+package com.amd.alloyapiwrapper
 
 import android.app.Application
 import com.androidnetworking.AndroidNetworking

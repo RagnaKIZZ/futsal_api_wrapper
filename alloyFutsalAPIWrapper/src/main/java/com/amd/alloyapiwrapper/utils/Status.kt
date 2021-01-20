@@ -1,4 +1,4 @@
-package com.amd.alloyfutsalapiwrapper.utils
+package com.amd.alloyapiwrapper.utils
 
 enum class Status {
     SUCCESS,
