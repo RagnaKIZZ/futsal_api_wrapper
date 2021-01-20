@@ -40,7 +40,7 @@ class CallAPI {
                        , onSuccess: ((resultResponse: ModelField) -> Unit)
                        , onFailed: (msg: String) -> Unit
         ){
-            onLoading.let { }
+            onLoading()
             compositeDisposable.add(
                 apiHelper.getField().compose(schedulerProvider.ioToMainFlowableScheduler())
                     .subscribe ({ resultField ->
